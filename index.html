@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <style>
+   div {
+    border: 1px solid black; /* Параметры рамки */
+    padding: 5px; /* Поля вокруг текста */
+    margin-bottom: 5px; /* Отступ снизу */
+   }
+   #left { text-align: left; }
+   #right { text-align: right; }
+   #center { text-align: center; }
+   .content {
+    width: 75%; /* Ширина слоя */
+    background: #fc0; /* Цвет фона */
+   }
+	</style>
   </head>
-  <body>
-      <style type="text/css"> 
-      button[name="run_script"] { 
-      border: none;
-      border-radius: 7px;
-      padding: 10px 25px;
-      background: #ff9900;
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: white;
-    }
-    button[name="run_script"]:hover { 
-      background: #ff6600;
-    } 
-  </style>
+  <body
+  margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);>
+	<div class="conteiner"
+
+	max-width: 390px;
+>
+		<div class="home" id="center">
+			<style type="text/css"> 
+		  button[name="run_script"] { 
+		  border: none;
+		  border-radius: 7px;
+		  padding: 10px 25px;
+		  background: #ff9900;
+		  cursor: pointer;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  color: white;
+		}
+		button[name="run_script"]:hover { 
+		  background: #ff6600;
+		} 
+		</style>
   <button type="button" name="run_script">Запустить скрипт</button>
-    Андрей молодец!
+		</div>
+		<div class="item">
+			
+			тело
+			
+		</div>
+		
+		<div class="down">
+			подвал
+		</div>
+	</div>
+	
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="app.js"></script>
   </body>
 </html>
 
